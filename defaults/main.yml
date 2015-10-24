@@ -1,0 +1,4 @@
+---
+# defaults file for ansible-ntop
+ntop_debian_apt_url: 'http://apt-stable.ntop.org/{{ ansible_distribution_version }}/all'
+ntop_debian_package: apt-ntop-stable.deb
