@@ -22,7 +22,7 @@ Dependencies
 ------------
 
 Ansible Galaxy role(s)
-- mrlesmithjr.redis-server
+- mrlesmithjr.redis
 
 ````
 ansible-galaxy install -r ntop_requirements.yml
@@ -39,7 +39,7 @@ Example Playbook
   sudo: true
   vars:
   roles:
-    - mrlesmithjr.redis-server
+    - mrlesmithjr.redis
     - mrlesmithjr.ntop
   tasks:
 
