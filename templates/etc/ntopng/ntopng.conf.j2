@@ -49,6 +49,7 @@
 #
 #-m=192.168.1.0/24
 -m={% for item in ntop_local_networks %}{{ item }}{% if not loop.last %},{% endif %}{% endfor %}
+
 #
 #       -n|--dns-mode
 #        Sets the DNS address resolution mode: 0 - Decode DNS responses  and  resolve  only  local
