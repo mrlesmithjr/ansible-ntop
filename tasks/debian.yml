@@ -3,7 +3,7 @@
   get_url: url={{ ntop_debian_apt_url }}/{{ ntop_debian_package }} dest=/opt/{{ ntop_debian_package }}
 
 - name: debian | installing NTOP repo package
-  apt: deb=/opt/{{ ntop_debian_package }}
+  apt: deb=/opt/{{ ntop_debian_package }} update_cache=yes
 
 - name: debian | installing pre-reqs
   apt: name={{ item }} state=present
