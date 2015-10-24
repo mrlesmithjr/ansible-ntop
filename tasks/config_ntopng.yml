@@ -1,0 +1,4 @@
+---
+- name: config_ntopng | configuring NTOPNG
+  template: src=etc/ntopng/ntopng.conf.j2 dest=/etc/ntopng/ntopng.conf owner=root group=root mode=0644
+  notify: restart ntopng
