@@ -9,4 +9,5 @@
 
 - name: config_ntopng | configuring NTOPNG
   file: path=/etc/ntopng/ntopng.start state=touch
+  notify: restart ntopng
   when: not ntopng_start.stat.exists
